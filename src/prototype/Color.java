@@ -1,9 +1,9 @@
 package prototype;
 
-abstract class Color implements Cloneable {
+public abstract class Color implements Cloneable {
     protected String colorName;
 
-    abstract void addColor();
+    public abstract void addColor();
 
     public Object clone() {
         Object clone = null;
