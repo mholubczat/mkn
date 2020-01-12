@@ -11,7 +11,8 @@ public class ColorStore {
         colorMap.put("black", new BlackColor());
     }
     public static Color getColor(String colorName){
-        return  colorMap.get(colorName);
+
+        return (Color) colorMap.get(colorName).clone();
     }
 
 
